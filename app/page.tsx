@@ -11,10 +11,18 @@ export default function Home() {
       <section className="bg-gradient-to-br from-blue-900 to-slate-800 text-white px-6 py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
           <div>
-            <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
-              Jasa Pendampingan Publikasi
-              <span className="block text-cyan-300">Scopus & SINTA</span>
-            </h1>
+            <div className="mb-6">
+              <p className="text-cyan-300 font-semibold tracking-widest uppercase mb-2">
+                Ilmupediakonsultan — Smart Partner for Scientific Publication
+              </p>
+
+              <h1 className="text-5xl font-bold text-white leading-tight">
+                Jasa Pendampingan Publikasi
+                <span className="block text-cyan-400">
+                  Scopus & SINTA
+                </span>
+              </h1>
+          </div>
 
             <p className="mb-8 text-lg leading-relaxed text-slate-200">
               Pendampingan profesional mulai dari proofreading, formatting,
@@ -176,10 +184,15 @@ export default function Home() {
 
       <footer className="bg-slate-900 px-6 py-10 text-center text-slate-300">
         <p className="mb-2 text-lg font-semibold">
-          Jasa Pendampingan Publikasi Scopus & SINTA
+          Ilmupedia Konsultan — Smart Partner for Scientific Publication
         </p>
+
         <p className="text-sm text-slate-400">
-          © 2026 All Rights Reserved
+          Pendampingan Publikasi Scopus & SINTA secara Profesional, Transparan, dan Terpercaya.
+        </p>
+
+        <p className="mt-4 text-xs text-slate-500">
+          © 2026 Ilmupediakonsultan. All Rights Reserved
         </p>
       </footer>
     </main>
