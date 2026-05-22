@@ -1,10 +1,18 @@
 export default function Home() {
-  const waNumber = "6282143265501"; // GANTI dengan nomor WhatsApp Anda
-  const waMessage = encodeURIComponent(
-    "Halo, saya tertarik dengan jasa publikasi jurnal Scopus dan SINTA. Saya ingin konsultasi lebih lanjut."
-  );
+  const waNumber = "6282143265501";
 
-  const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
+  const heroWaLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
+    "Halo Admin Ilmupediakonsultan, saya tertarik layanan publikasi jurnal."
+  )}`;
+
+  const chatWaLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
+    "Halo Admin Ilmupediakonsultan, saya ingin diskusi tentang target jurnal, kesiapan artikel, dan strategi publikasi terbaik untuk paper saya"
+  )}`;
+
+  const getPackageWaLink = (packageName: string) =>
+    `https://wa.me/${waNumber}?text=${encodeURIComponent(
+      `Halo Admin Ilmupediakonsultan, saya ingin konsultasi lebih lanjut mengenai paket publikasi ${packageName}`
+    )}`;
 
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
@@ -18,11 +26,9 @@ export default function Home() {
 
               <h1 className="text-5xl font-bold text-white leading-tight">
                 Jasa Pendampingan Publikasi
-                <span className="block text-cyan-400">
-                  Scopus & SINTA
-                </span>
+                <span className="block text-cyan-400">Scopus & SINTA</span>
               </h1>
-          </div>
+            </div>
 
             <p className="mb-8 text-lg leading-relaxed text-slate-200">
               Pendampingan profesional mulai dari proofreading, formatting,
@@ -31,7 +37,7 @@ export default function Home() {
             </p>
 
             <a
-              href={waLink}
+              href={heroWaLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-2xl bg-green-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-green-600"
@@ -44,19 +50,19 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-6 text-center">
               <div>
                 <h3 className="text-4xl font-bold text-cyan-300">Q1</h3>
-                <p className="mt-2 text-sm">Scopus Premium</p>
+                <p className="mt-2 text-sm">Top 25% SJR</p>
               </div>
               <div>
                 <h3 className="text-4xl font-bold text-cyan-300">Q2</h3>
-                <p className="mt-2 text-sm">Pendampingan Intensif</p>
+                <p className="mt-2 text-sm">25%-50% SJR</p>
               </div>
               <div>
                 <h3 className="text-4xl font-bold text-cyan-300">Q3</h3>
-                <p className="mt-2 text-sm">Scopus Menengah</p>
+                <p className="mt-2 text-sm">50%-75% SJR</p>
               </div>
               <div>
                 <h3 className="text-4xl font-bold text-cyan-300">Q4</h3>
-                <p className="mt-2 text-sm">Paket Ekonomis</p>
+                <p className="mt-2 text-sm">75%-100% SJR</p>
               </div>
             </div>
           </div>
@@ -111,10 +117,30 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-4">
             {[
-              { title: "SINTA 2", price: "Rp4 Juta", border: "border-green-500" },
-              { title: "Scopus Q4", price: "Rp6,5 Juta", border: "border-blue-500" },
-              { title: "Scopus Q3", price: "Rp9,3 Juta", border: "border-purple-500" },
-              { title: "Scopus Q1/Q2", price: "Rp12–15 Juta", border: "border-yellow-500" },
+              {
+                title: "SINTA 2",
+                price: "Rp4 Juta",
+                border: "border-green-500",
+                messageName: "Sinta 2",
+              },
+              {
+                title: "Scopus Q4",
+                price: "Rp6,5 Juta",
+                border: "border-blue-500",
+                messageName: "Scopus Q4",
+              },
+              {
+                title: "Scopus Q3",
+                price: "Rp9,3 Juta",
+                border: "border-purple-500",
+                messageName: "Scopus Q3",
+              },
+              {
+                title: "Scopus Q1/Q2",
+                price: "Rp12–15 Juta",
+                border: "border-yellow-500",
+                messageName: "Scopus Q1/Q2",
+              },
             ].map((pkg) => (
               <div
                 key={pkg.title}
@@ -133,7 +159,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href={waLink}
+                  href={getPackageWaLink(pkg.messageName)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 rounded-2xl bg-slate-900 py-3 text-center font-semibold text-white transition hover:bg-slate-700"
@@ -171,7 +197,7 @@ export default function Home() {
             </p>
 
             <a
-              href={waLink}
+              href={chatWaLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-2xl bg-white px-8 py-4 font-bold text-slate-900 shadow-lg transition hover:bg-slate-200"
@@ -188,7 +214,8 @@ export default function Home() {
         </p>
 
         <p className="text-sm text-slate-400">
-          Pendampingan Publikasi Scopus & SINTA secara Profesional, Transparan, dan Terpercaya.
+          Pendampingan Publikasi Scopus & SINTA secara Profesional,
+          Transparan, dan Terpercaya.
         </p>
 
         <p className="mt-4 text-xs text-slate-500">
