@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
   const waNumber = "6282123286914";
   const heroWaLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
@@ -18,11 +19,13 @@ export default function Home() {
       <section className="bg-gradient-to-br from-blue-900 to-slate-800 text-white px-6 py-20">
   <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
     <div>
-      <div className="mb-8 flex justify-center md:justify-start">
-        <img
+      <div className="mb-8 flex justify-center">
+        <Image
           src="/images/logo-ilmupedia.png"
           alt="Logo Ilmupedia Konsultan"
-          className="w-72 max-w-full rounded-2xl bg-white p-3 shadow-2xl"
+          className="w-72 max-w-full"
+          width={288}
+          height={100}
         />
       </div>
 
