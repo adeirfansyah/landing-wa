@@ -1,6 +1,5 @@
 export default function Home() {
-  const waNumber = "6282143265501";
-
+  const waNumber = "6282123286914";
   const heroWaLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
     "Halo Admin Ilmupediakonsultan, saya tertarik layanan publikasi jurnal."
   )}`;
