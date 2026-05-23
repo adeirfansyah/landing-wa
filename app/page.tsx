@@ -1,6 +1,8 @@
 import Image from "next/image";
+
 export default function Home() {
   const waNumber = "6282123286914";
+
   const heroWaLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
     "Halo Admin Ilmupediakonsultan, saya tertarik layanan publikasi jurnal."
   )}`;
@@ -16,72 +18,72 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
-      <section className="bg-gradient-to-br from-blue-900 to-slate-800 text-white px-6 py-20">
-  <div className="mx-auto mb-10 flex w-full max-w-6xl justify-center px-4">
-    <Image
-      src="/images/logo-ilmupedia.png"
-      alt="Logo Ilmupedia Konsultan"
-      width={288}
-      height={288}
-      className="h-auto w-40 max-w-full sm:w-56 md:w-72"
-      priority
-    />
-  </div>
+      <section className="bg-gradient-to-br from-blue-900 to-slate-800 px-6 py-20 text-white">
+        <div className="mx-auto mb-6 flex w-full max-w-6xl justify-center px-4">
+          <Image
+            src="/images/logo-ilmupedia.png"
+            alt="Logo Ilmupedia Konsultan"
+            width={288}
+            height={288}
+            className="h-auto w-40 max-w-full sm:w-56 md:w-72"
+            priority
+          />
+        </div>
 
-  <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
-    <div>
-      <div className="mb-6">
-        <p className="text-cyan-300 font-semibold tracking-widest uppercase mb-2">
+        <p className="mx-auto mb-12 max-w-6xl text-center font-semibold uppercase tracking-widest text-cyan-300">
           Ilmupediakonsultan — Smart Partner for Scientific Publication
         </p>
 
-        <h1 className="text-5xl font-bold text-white leading-tight">
-          Jasa Pendampingan Publikasi
-          <span className="block text-cyan-400">Scopus & SINTA</span>
-        </h1>
-      </div>
+        <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
+          <div>
+            <div className="mb-6">
+              <h1 className="text-5xl font-bold leading-tight text-white">
+                Jasa Pendampingan Publikasi
+                <span className="block text-cyan-400">Scopus & SINTA</span>
+              </h1>
+            </div>
 
-      <p className="mb-8 text-lg leading-relaxed text-slate-200">
-        Pendampingan profesional mulai dari proofreading, formatting, submit
-        jurnal, revisi reviewer, hingga Letter of Acceptance sesuai proses
-        editorial jurnal.
-      </p>
+            <p className="mb-8 text-lg leading-relaxed text-slate-200">
+              Pendampingan profesional mulai dari proofreading, formatting,
+              submit jurnal, revisi reviewer, hingga Letter of Acceptance sesuai
+              proses editorial jurnal.
+            </p>
 
-      <a
-        href={heroWaLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block rounded-2xl bg-green-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-green-600"
-      >
-        Konsultasi via WhatsApp
-      </a>
-    </div>
+            <a
+              href={heroWaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-2xl bg-green-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-green-600"
+            >
+              Konsultasi via WhatsApp
+            </a>
+          </div>
 
-    <div className="rounded-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-md">
-      <div className="grid grid-cols-2 gap-6 text-center">
-        <div>
-          <h3 className="text-4xl font-bold text-cyan-300">Q1</h3>
-          <p className="mt-2 text-sm">Top 25% SJR</p>
+          <div className="rounded-3xl border border-white/20 bg-white/10 p-8 shadow-2xl backdrop-blur-md">
+            <div className="grid grid-cols-2 gap-6 text-center">
+              <div>
+                <h3 className="text-4xl font-bold text-cyan-300">Q1</h3>
+                <p className="mt-2 text-sm">Top 25% SJR</p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-cyan-300">Q2</h3>
+                <p className="mt-2 text-sm">25%-50% SJR</p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-cyan-300">Q3</h3>
+                <p className="mt-2 text-sm">50%-75% SJR</p>
+              </div>
+
+              <div>
+                <h3 className="text-4xl font-bold text-cyan-300">Q4</h3>
+                <p className="mt-2 text-sm">75%-100% SJR</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-cyan-300">Q2</h3>
-          <p className="mt-2 text-sm">25%-50% SJR</p>
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-cyan-300">Q3</h3>
-          <p className="mt-2 text-sm">50%-75% SJR</p>
-        </div>
-
-        <div>
-          <h3 className="text-4xl font-bold text-cyan-300">Q4</h3>
-          <p className="mt-2 text-sm">75%-100% SJR</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
@@ -206,8 +208,8 @@ export default function Home() {
             </h3>
 
             <p className="mb-8 text-lg text-cyan-100">
-              Diskusikan target jurnal, kesiapan artikel, dan strategi
-              publikasi terbaik untuk paper Anda.
+              Diskusikan target jurnal, kesiapan artikel, dan strategi publikasi
+              terbaik untuk paper Anda.
             </p>
 
             <a
@@ -228,8 +230,8 @@ export default function Home() {
         </p>
 
         <p className="text-sm text-slate-400">
-          Pendampingan Publikasi Scopus & SINTA secara Profesional,
-          Transparan, dan Terpercaya.
+          Pendampingan Publikasi Scopus & SINTA secara Profesional, Transparan,
+          dan Terpercaya.
         </p>
 
         <p className="mt-4 text-xs text-slate-500">
