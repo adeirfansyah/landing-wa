@@ -17,18 +17,19 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 text-gray-800">
       <section className="bg-gradient-to-br from-blue-900 to-slate-800 text-white px-6 py-20">
+  <div className="mx-auto mb-10 flex w-full max-w-6xl justify-center px-4">
+    <Image
+      src="/images/logo-ilmupedia.png"
+      alt="Logo Ilmupedia Konsultan"
+      width={288}
+      height={288}
+      className="h-auto w-40 max-w-full sm:w-56 md:w-72"
+      priority
+    />
+  </div>
+
   <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
     <div>
-      <div className="mb-8 flex justify-center">
-        <Image
-          src="/images/logo-ilmupedia.png"
-          alt="Logo Ilmupedia Konsultan"
-          className="w-72 max-w-full"
-          width={288}
-          height={100}
-        />
-      </div>
-
       <div className="mb-6">
         <p className="text-cyan-300 font-semibold tracking-widest uppercase mb-2">
           Ilmupediakonsultan — Smart Partner for Scientific Publication
